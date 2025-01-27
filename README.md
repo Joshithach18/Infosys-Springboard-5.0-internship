@@ -51,15 +51,23 @@ Intent Analysis: facebook/bart-large-mnli from Hugging Face.
 
 Objective: Understand the buyer's mood and intent to provide actionable insights.
 
-# 4. Negotiating Terms Generation
+# 4. Deal Recommendations
 
-Approach:
+Approach: Suggest laptops based on the input given by the buyer and extract matched laptops names in the input to the product name in the dataset, recommends to the buyer.
 
-Extracts keywords based on sentiment and intent analysis.
+# 5. Negotiating Terms Generation
+
+Approach: Extracts keywords based on sentiment and intent analysis.
 
 Generates basic negotiation terms tailored to the buyer's context.
 
-# 5. Google Sheets Integration
+# 6. Summarization of Conversation
+
+Aprroach: Sumamrizes the whole conversation and finalises the deal status based on the sentiment.
+
+Model used: llama 3.3 70b versatile model from GROQ LLM.
+
+# 7. Google Sheets Integration
 
 Purpose: Records all buyer interactions and contextual data for tracking and analysis.
 
@@ -67,7 +75,7 @@ Implementation:
 
 Used the spreadsheet ID of a shared Google Sheet linked with the service account in the credentials file.
 
-# 6. Workflow Integration
+# 8. Workflow Integration
 Objective: Seamlessly integrates all steps into a unified, functional workflow for real-time operation.
 
 ## Contribution Guidelines
